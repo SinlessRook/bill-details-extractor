@@ -33,6 +33,14 @@ Sample bill images used in this project:
 - Launch a Streamlit-based dashboard for interactive review.
 - Push accepted extraction results to Zoho Books as expense entries.
 
+## How It Works
+
+1. Add bill or receipt images to the Bills folder.
+2. Run the extraction pipeline with the configured models.
+3. Save the extracted results as JSON files in the output folder.
+4. Compare the predictions against ground truth using the evaluation script.
+5. Review accuracy, cost summaries, and side-by-side comparisons in the UI or generated CSV files.
+
 ## Technologies Used
 
 - Python
@@ -157,6 +165,16 @@ The project compares model predictions against a manually prepared ground truth 
 - The pricing used for cost estimation should be reviewed periodically, as provider pricing can change.
 - GPT and Claude extraction are routed through OpenRouter, so an OpenRouter API key is required for those providers.
 - Some extractors may require extra configuration depending on the API provider.
+
+## Known Limitations
+
+- The hosted demo does not have the required API keys configured, so upload and Zoho integration features will not work there.
+- This project focuses on comparing a small set of models rather than a full production-grade OCR pipeline.
+- Ground truth and scoring quality depend on the accuracy and completeness of the manually labeled CSV file.
+
+## Contributing
+
+Contributions are welcome. If you improve the extraction logic, add new providers, or improve the documentation, feel free to open a pull request.
 
 ## License
 
