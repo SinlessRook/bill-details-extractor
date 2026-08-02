@@ -1,6 +1,6 @@
 # Handwritten Bill Extraction & Model Evaluation
 
-This project compares multiple AI models on their ability to extract structured information from handwritten Indian bills and receipts. It can run extraction over a folder of bill images, score the results against ground truth, and optionally push validated expenses into Zoho Books.
+This project compares multiple AI-powered models on their ability to extract structured information from handwritten Indian bills and receipts. It can run extraction over a folder of bill images, score the results against ground truth, and optionally push validated expenses into Zoho Books.
 
 ## Overview
 
@@ -29,6 +29,7 @@ Sample bill images used in this project:
 - Compare multiple LLM-based extractors on the same images.
 - Support for Gemini, Groq, and OpenRouter-backed models.
 - Use OpenRouter for GPT and Claude-based extraction providers in addition to native Gemini and Groq integrations.
+- The project uses model providers such as gemini-3-flash-preview, qwen/qwen3.6-27b, openai/gpt-4o-mini, and anthropic/claude-haiku-4.5 for comparison.
 - Generate evaluation tables for accuracy and cost.
 - Launch a Streamlit-based dashboard for interactive review.
 - Push accepted extraction results to Zoho Books as expense entries.
@@ -170,6 +171,7 @@ The project compares model predictions against a manually prepared ground truth 
 
 - The hosted demo does not have the required API keys configured, so upload and Zoho integration features will not work there.
 - This project focuses on comparing a small set of models rather than a full production-grade OCR pipeline.
+- Many provider APIs are available only through free tiers or limited credits, so usage may be restricted depending on your account limits.
 - Ground truth and scoring quality depend on the accuracy and completeness of the manually labeled CSV file.
 
 ## Contributing
