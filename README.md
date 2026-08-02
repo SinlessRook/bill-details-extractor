@@ -4,6 +4,10 @@ This project compares multiple AI models on their ability to extract structured 
 
 ## Overview
 
+Try the live demo here: https://bill-details-extractor.streamlit.app/
+
+> The demo site does not have the required API keys configured, so the upload and Zoho integration features will not work in the hosted deployment. Local setup is still required for full functionality.
+
 The workflow is:
 
 1. Place bill images in the Bills folder.
