@@ -1,0 +1,81 @@
+{
+  "bill_filename": "Bill_1.jpg",
+  "results": {
+    "gemini": {
+      "bill_filename": "Bill_1.jpg",
+      "model": "gemini",
+      "fields": {
+        "vendor": "SRINIVASA BOOK STORE",
+        "invoice_number": "4188",
+        "date": "11-08-2022",
+        "amount": 19000,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 1341,
+        "output_tokens": 74
+      },
+      "latency_seconds": 4.551188707351685,
+      "raw_response": "{\n  \"vendor\": \"SRINIVASA BOOK STORE\",\n  \"invoice_number\": \"4188\",\n  \"date\": \"11-08-2022\",\n  \"amount\": 19000,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
+    },
+    "groq_qwen": {
+      "bill_filename": "Bill_1.jpg",
+      "model": "groq_qwen",
+      "fields": {
+        "vendor": "SRINIVASA BOOK STORE",
+        "invoice_number": "4188",
+        "date": "14-08-2022",
+        "amount": 19000,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 2033,
+        "output_tokens": 270
+      },
+      "latency_seconds": 1.5104100704193115,
+      "raw_response": "\n<think>\nThe user wants the data from the receipt extracted into a specific JSON format.\n\n1.  **vendor**: The header clearly says \"SRINIVASA BOOK STORE\".\n2.  **invoice_number**: The number \"4188\" is printed next to \"No.\".\n3.  **date**: The date is handwritten as \"14-08-2022\".\n4.  **amount**: The total at the bottom is \"19000-00\".\n5.  **currency**: It's an Indian receipt (Hyderabad address), so \"INR\".\n6.  **gst_details**: I need to scan for GST numbers or tax breakdowns. Looking closely at the receipt, there is no GST number, no CGST/SGST/IGST mentioned, and no tax rate. It's a simple cash bill. So, this should be null.\n</think>\n\n```json\n{\n    \"vendor\": \"SRINIVASA BOOK STORE\",\n    \"invoice_number\": \"4188\",\n    \"date\": \"14-08-2022\",\n    \"amount\": 19000,\n    \"currency\": \"INR\",\n    \"gst_details\": null\n}\n```",
+      "error": null
+    },
+    "gpt": {
+      "bill_filename": "Bill_1.jpg",
+      "model": "gpt",
+      "fields": {
+        "vendor": "SRINIVASA BOOK STORE",
+        "invoice_number": "4188",
+        "date": "14-08-2022",
+        "amount": 19600,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 37063,
+        "output_tokens": 59
+      },
+      "latency_seconds": 8.96285629272461,
+      "raw_response": "{\n  \"vendor\": \"SRINIVASA BOOK STORE\",\n  \"invoice_number\": \"4188\",\n  \"date\": \"14-08-2022\",\n  \"amount\": 19600,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
+    },
+    "claude": {
+      "bill_filename": "Bill_1.jpg",
+      "model": "claude",
+      "fields": {
+        "vendor": null,
+        "invoice_number": null,
+        "date": null,
+        "amount": null,
+        "currency": null,
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "latency_seconds": 8.079255104064941,
+      "raw_response": "",
+      "error": "Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_011CddmLANXgshwgZS6xkTFh\"}', 'provider_name': 'Azure', 'is_byok': False, 'previous_errors': [{'code': 400, 'message': 'Provider returned error', 'provider_name': 'Amazon Bedrock', 'raw': '{\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Google', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_vrtx_011CddmKyTT3LwGxfRFDXtWX\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Anthropic', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_011CddmL31mSTGNCTHjWdinv\"}'}]}}, 'user_id': 'user_3HM6bKn1GhPiBnFtklBsCArwhtC'}"
+    }
+  }
+}

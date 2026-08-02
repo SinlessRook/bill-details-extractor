@@ -1,0 +1,81 @@
+{
+  "bill_filename": "Bill_3.jpg",
+  "results": {
+    "gemini": {
+      "bill_filename": "Bill_3.jpg",
+      "model": "gemini",
+      "fields": {
+        "vendor": "VISHAL PUNJABI VAISHNO BHOJANALYA",
+        "invoice_number": "1687",
+        "date": "22-05-2007",
+        "amount": 146,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 1298,
+        "output_tokens": 74
+      },
+      "latency_seconds": 2.3901853561401367,
+      "raw_response": "{\n\"vendor\": \"VISHAL PUNJABI VAISHNO BHOJANALYA\",\n\"invoice_number\": \"1687\",\n\"date\": \"22-05-2007\",\n\"amount\": 146,\n\"currency\": \"INR\",\n\"gst_details\": null\n}",
+      "error": null
+    },
+    "groq_qwen": {
+      "bill_filename": "Bill_3.jpg",
+      "model": "groq_qwen",
+      "fields": {
+        "vendor": "VISHAL PUNJABI VAISHNO BHOJANALYA",
+        "invoice_number": "1687",
+        "date": "29-05-2007",
+        "amount": 146,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 2033,
+        "output_tokens": 287
+      },
+      "latency_seconds": 25.33544945716858,
+      "raw_response": "\n<think>\nThe user wants the data from the receipt extracted into a specific JSON format.\n\n1.  **Vendor:** The header says \"VISHAL PUNJABI VAISHNO BHOJANALYA\".\n2.  **Invoice Number:** The number \"1687\" is stamped in red.\n3.  **Date:** The date is handwritten as \"29/05/07\". I need to format this as DD-MM-YYYY. So, 29-05-2007.\n4.  **Amount:** The total at the bottom is \"146\".\n5.  **Currency:** It's an Indian receipt (Srinagar address), so \"INR\".\n6.  **GST Details:** I need to scan for GST numbers or tax breakdowns. I see \"Rs.\" and \"P.\" columns, but no specific GSTIN or tax rate mentioned. So, null.\n</think>\n\n```json\n{\n    \"vendor\": \"VISHAL PUNJABI VAISHNO BHOJANALYA\",\n    \"invoice_number\": \"1687\",\n    \"date\": \"29-05-2007\",\n    \"amount\": 146,\n    \"currency\": \"INR\",\n    \"gst_details\": null\n}\n```",
+      "error": null
+    },
+    "gpt": {
+      "bill_filename": "Bill_3.jpg",
+      "model": "gpt",
+      "fields": {
+        "vendor": "VISHAL PUNJABI VAISHNO BHOJANALYA",
+        "invoice_number": "1687",
+        "date": "29-05-1999",
+        "amount": 146,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 8728,
+        "output_tokens": 66
+      },
+      "latency_seconds": 2.252599000930786,
+      "raw_response": "{\n  \"vendor\": \"VISHAL PUNJABI VAISHNO BHOJANALYA\",\n  \"invoice_number\": \"1687\",\n  \"date\": \"29-05-1999\",\n  \"amount\": 146,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
+    },
+    "claude": {
+      "bill_filename": "Bill_3.jpg",
+      "model": "claude",
+      "fields": {
+        "vendor": "VISHAL PUNJABI VAISHNO BHOJANALYA",
+        "invoice_number": "1687",
+        "date": "29-01-09",
+        "amount": 146,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 474,
+        "output_tokens": 82
+      },
+      "latency_seconds": 3.9288675785064697,
+      "raw_response": "```json\n{\n  \"vendor\": \"VISHAL PUNJABI VAISHNO BHOJANALYA\",\n  \"invoice_number\": \"1687\",\n  \"date\": \"29-01-09\",\n  \"amount\": 146,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}\n```",
+      "error": null
+    }
+  }
+}

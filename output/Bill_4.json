@@ -1,0 +1,81 @@
+{
+  "bill_filename": "Bill_4.jpg",
+  "results": {
+    "gemini": {
+      "bill_filename": "Bill_4.jpg",
+      "model": "gemini",
+      "fields": {
+        "vendor": "BHARAT ASSOCIATES",
+        "invoice_number": "004",
+        "date": "15-01-2024",
+        "amount": 32345,
+        "currency": "INR",
+        "gst_details": "GSTIN: 09GBVPS8212J1ZP, CGST: 9% (625), SGST: 9% (625), HSN CODE: 9982"
+      },
+      "usage": {
+        "input_tokens": 1314,
+        "output_tokens": 119
+      },
+      "latency_seconds": 10.72456669807434,
+      "raw_response": "{\n  \"vendor\": \"BHARAT ASSOCIATES\",\n  \"invoice_number\": \"004\",\n  \"date\": \"15-01-2024\",\n  \"amount\": 32345,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN: 09GBVPS8212J1ZP, CGST: 9% (625), SGST: 9% (625), HSN CODE: 9982\"\n}",
+      "error": null
+    },
+    "groq_qwen": {
+      "bill_filename": "Bill_4.jpg",
+      "model": "groq_qwen",
+      "fields": {
+        "vendor": "BHARAT ASSOCIATES",
+        "invoice_number": "004",
+        "date": "15-11-2024",
+        "amount": 32345.0,
+        "currency": "INR",
+        "gst_details": "09GBVPS8212J1ZP, CGST 9% 625.00, SGST 9% 625.00"
+      },
+      "usage": {
+        "input_tokens": 2033,
+        "output_tokens": 344
+      },
+      "latency_seconds": 12.456031799316406,
+      "raw_response": "\n<think>\nThe user wants the data from the receipt extracted into a specific JSON format.\n\n1.  **Vendor**: The header clearly says \"BHARAT ASSOCIATES\".\n2.  **Invoice Number**: Located in the top right section, \"004\".\n3.  **Date**: Located next to \"Invoice Date:\", written as \"15/11/2024\".\n4.  **Amount**: The \"Total Amount After Tax\" is \"32345.00\".\n5.  **Currency**: It's an Indian receipt (Ghaziabad, UP), so \"INR\".\n6.  **GST Details**: The vendor's GSTIN is \"09GBVPS8212J1ZP\". The customer's GSTIN is \"09AAFCF3342M1ZF\". The tax breakdown shows CGST 9% (625.00) and SGST 9% (625.00).\n\nI need to construct the JSON now.\n</think>\n\n```json\n{\n    \"vendor\": \"BHARAT ASSOCIATES\",\n    \"invoice_number\": \"004\",\n    \"date\": \"15-11-2024\",\n    \"amount\": 32345.00,\n    \"currency\": \"INR\",\n    \"gst_details\": \"09GBVPS8212J1ZP, CGST 9% 625.00, SGST 9% 625.00\"\n}\n```",
+      "error": null
+    },
+    "gpt": {
+      "bill_filename": "Bill_4.jpg",
+      "model": "gpt",
+      "fields": {
+        "vendor": "BHARAT ASSOCIATES",
+        "invoice_number": "004",
+        "date": "15-10-2023",
+        "amount": 32345,
+        "currency": "INR",
+        "gst_details": "CGST 9% 625, SGST 9% 625"
+      },
+      "usage": {
+        "input_tokens": 37063,
+        "output_tokens": 72
+      },
+      "latency_seconds": 4.6041929721832275,
+      "raw_response": "{\n  \"vendor\": \"BHARAT ASSOCIATES\",\n  \"invoice_number\": \"004\",\n  \"date\": \"15-10-2023\",\n  \"amount\": 32345,\n  \"currency\": \"INR\",\n  \"gst_details\": \"CGST 9% 625, SGST 9% 625\"\n}",
+      "error": null
+    },
+    "claude": {
+      "bill_filename": "Bill_4.jpg",
+      "model": "claude",
+      "fields": {
+        "vendor": null,
+        "invoice_number": null,
+        "date": null,
+        "amount": null,
+        "currency": null,
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "latency_seconds": 6.671842813491821,
+      "raw_response": "",
+      "error": "Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_011CddmNdjsbKxaCRQA7SksH\"}', 'provider_name': 'Azure', 'is_byok': False, 'previous_errors': [{'code': 400, 'message': 'Provider returned error', 'provider_name': 'Amazon Bedrock', 'raw': '{\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Google', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_vrtx_011CddmNSmKkaJabpqNdLLwK\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Anthropic', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_011CddmNWDSQrSwj2Kkq6Kne\"}'}]}}, 'user_id': 'user_3HM6bKn1GhPiBnFtklBsCArwhtC'}"
+    }
+  }
+}

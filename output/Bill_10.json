@@ -1,0 +1,81 @@
+{
+  "bill_filename": "Bill_10.jpeg",
+  "results": {
+    "gemini": {
+      "bill_filename": "Bill_10.jpeg",
+      "model": "gemini",
+      "fields": {
+        "vendor": "KCM Appliances Pvt.. Ltd techzone",
+        "invoice_number": "PVR 026",
+        "date": "27-05-2023",
+        "amount": 360,
+        "currency": "INR",
+        "gst_details": "GSTIN/UIN: 32AAECK1982G1ZO; Taxable Value: 360; Tax amount: GST null; Total Amount after Tax: 360; CIN: U51100KL210PTC027225"
+      },
+      "usage": {
+        "input_tokens": 1322,
+        "output_tokens": 135
+      },
+      "latency_seconds": 7.761244773864746,
+      "raw_response": "{\n\"vendor\": \"KCM Appliances Pvt.. Ltd techzone\",\n\"invoice_number\": \"PVR 026\",\n\"date\": \"27-05-2023\",\n\"amount\": 360,\n\"currency\": \"INR\",\n\"gst_details\": \"GSTIN/UIN: 32AAECK1982G1ZO; Taxable Value: 360; Tax amount: GST null; Total Amount after Tax: 360; CIN: U51100KL210PTC027225\"\n}",
+      "error": null
+    },
+    "groq_qwen": {
+      "bill_filename": "Bill_10.jpeg",
+      "model": "groq_qwen",
+      "fields": {
+        "vendor": "KCM Appliances Pvt.. Ltd techzone",
+        "invoice_number": "PVR 026",
+        "date": "07-05-2026",
+        "amount": 360,
+        "currency": "INR",
+        "gst_details": "GSTIN/UIN: 32AAECK1982G1ZO"
+      },
+      "usage": {
+        "input_tokens": 1521,
+        "output_tokens": 507
+      },
+      "latency_seconds": 11.867499589920044,
+      "raw_response": "\n<think>\nThe user wants the data from the receipt extracted into a specific JSON format.\n\n1.  **Vendor**: The top of the receipt says \"KCM Appliances Pvt.. Ltd\" and \"techzone\". I will use \"KCM Appliances Pvt.. Ltd techzone\".\n2.  **Invoice Number**: It says \"Invoice No. PVR 026\".\n3.  **Date**: The date is handwritten as \"07/5/26\". I need to format this as DD-MM-YYYY. It's likely 07-05-2026.\n4.  **Amount**: The total amount is written as \"360/-\" and \"360\".\n5.  **Currency**: It's an Indian receipt (GSTIN, INR symbol implied by context and location), so \"INR\".\n6.  **GST Details**: The GSTIN is \"32AAECK1982G1ZO\". There are columns for CGST and SGST but they are empty. The total tax amount isn't explicitly broken down, but the total is 360. I will extract the GSTIN.\n\nLet's refine the date. \"07/5/26\" usually means 7th May 2026 in Indian format (DD/MM/YY). So, 07-05-2026.\n\nLet's refine the vendor. \"KCM Appliances Pvt.. Ltd\" is the main legal name. \"techzone\" is the brand. I'll include both or just the main one. The prompt asks for \"shop/business name as written\". \"KCM Appliances Pvt.. Ltd\" is prominent.\n\nLet's refine the amount. The total is clearly 360.\n\nLet's refine GST details. \"GSTIN/UIN: 32AAECK1982G1ZO\" is at the top.\n\nConstructing JSON.\n</think>\n\n```json\n{\n    \"vendor\": \"KCM Appliances Pvt.. Ltd techzone\",\n    \"invoice_number\": \"PVR 026\",\n    \"date\": \"07-05-2026\",\n    \"amount\": 360,\n    \"currency\": \"INR\",\n    \"gst_details\": \"GSTIN/UIN: 32AAECK1982G1ZO\"\n}\n```",
+      "error": null
+    },
+    "gpt": {
+      "bill_filename": "Bill_10.jpeg",
+      "model": "gpt",
+      "fields": {
+        "vendor": "KCM Appliances Pvt. Ltd",
+        "invoice_number": "PVR 026",
+        "date": "27-06-2020",
+        "amount": 360,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 25729,
+        "output_tokens": 59
+      },
+      "latency_seconds": 3.3840739727020264,
+      "raw_response": "{\n  \"vendor\": \"KCM Appliances Pvt. Ltd\",\n  \"invoice_number\": \"PVR 026\",\n  \"date\": \"27-06-2020\",\n  \"amount\": 360,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
+    },
+    "claude": {
+      "bill_filename": "Bill_10.jpeg",
+      "model": "claude",
+      "fields": {
+        "vendor": "KCM Appliances Pvt. Ltd",
+        "invoice_number": "PVR 026",
+        "date": "01-05-26",
+        "amount": 360,
+        "currency": "INR",
+        "gst_details": "GSTIN/UIN: 32AAECK1982G1ZO"
+      },
+      "usage": {
+        "input_tokens": 1811,
+        "output_tokens": 101
+      },
+      "latency_seconds": 7.260855197906494,
+      "raw_response": "```json\n{\n  \"vendor\": \"KCM Appliances Pvt. Ltd\",\n  \"invoice_number\": \"PVR 026\",\n  \"date\": \"01-05-26\",\n  \"amount\": 360,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN/UIN: 32AAECK1982G1ZO\"\n}\n```",
+      "error": null
+    }
+  }
+}

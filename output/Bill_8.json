@@ -1,0 +1,81 @@
+{
+  "bill_filename": "Bill_8.jpeg",
+  "results": {
+    "gemini": {
+      "bill_filename": "Bill_8.jpeg",
+      "model": "gemini",
+      "fields": {
+        "vendor": "MINNALE SPORTLICH CYCLES & KIDS WHEELS",
+        "invoice_number": "1268",
+        "date": "04-03-2024",
+        "amount": 6700,
+        "currency": "INR",
+        "gst_details": "GSTIN: 32AKWPN2281N1ZI"
+      },
+      "usage": {
+        "input_tokens": 1314,
+        "output_tokens": 90
+      },
+      "latency_seconds": 6.543356895446777,
+      "raw_response": "{\n\"vendor\": \"MINNALE SPORTLICH CYCLES & KIDS WHEELS\",\n\"invoice_number\": \"1268\",\n\"date\": \"04-03-2024\",\n\"amount\": 6700,\n\"currency\": \"INR\",\n\"gst_details\": \"GSTIN: 32AKWPN2281N1ZI\"\n}",
+      "error": null
+    },
+    "groq_qwen": {
+      "bill_filename": "Bill_8.jpeg",
+      "model": "groq_qwen",
+      "fields": {
+        "vendor": "CYCLES & KIDS WHEELS",
+        "invoice_number": "1268",
+        "date": "04-03-2021",
+        "amount": 6700,
+        "currency": "INR",
+        "gst_details": "32AKWPN2281N1ZI"
+      },
+      "usage": {
+        "input_tokens": 2033,
+        "output_tokens": 315
+      },
+      "latency_seconds": 19.102811336517334,
+      "raw_response": "\n<think>\nThe user wants the data from the receipt extracted into a specific JSON format.\n\n1.  **Vendor**: The header says \"CYCLES & KIDS WHEELS\" and \"MINNALE SPORTLICH\". I will use the main business name \"CYCLES & KIDS WHEELS\".\n2.  **Invoice Number**: The \"Sl. No.\" field has \"1268\" written in red.\n3.  **Date**: The \"Date of Issue\" is \"04-03-21\". I need to format this as DD-MM-YYYY, so \"04-03-2021\".\n4.  **Amount**: The total amount at the bottom is \"6700\".\n5.  **Currency**: It's an Indian receipt (GSTIN, Kerala state code), so \"INR\".\n6.  **GST Details**: The GSTIN is clearly visible: \"32AKWPN2281N1ZI\".\n\nLet's construct the JSON.\n</think>\n\n```json\n{\n    \"vendor\": \"CYCLES & KIDS WHEELS\",\n    \"invoice_number\": \"1268\",\n    \"date\": \"04-03-2021\",\n    \"amount\": 6700,\n    \"currency\": \"INR\",\n    \"gst_details\": \"32AKWPN2281N1ZI\"\n}\n```",
+      "error": null
+    },
+    "gpt": {
+      "bill_filename": "Bill_8.jpeg",
+      "model": "gpt",
+      "fields": {
+        "vendor": "Timro Cycles & Kids Wheels",
+        "invoice_number": "12680",
+        "date": "04-03-2016",
+        "amount": 6700,
+        "currency": "INR",
+        "gst_details": "GSTIN: 32AKWP2281N1Z1"
+      },
+      "usage": {
+        "input_tokens": 37063,
+        "output_tokens": 73
+      },
+      "latency_seconds": 5.893378973007202,
+      "raw_response": "{\n  \"vendor\": \"Timro Cycles & Kids Wheels\",\n  \"invoice_number\": \"12680\",\n  \"date\": \"04-03-2016\",\n  \"amount\": 6700,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN: 32AKWP2281N1Z1\"\n}",
+      "error": null
+    },
+    "claude": {
+      "bill_filename": "Bill_8.jpeg",
+      "model": "claude",
+      "fields": {
+        "vendor": "Samrat Cycles & Kids Wheels",
+        "invoice_number": "1200",
+        "date": "04-03-2024",
+        "amount": 6700,
+        "currency": "INR",
+        "gst_details": "GSTIN: 32AKWPN2281N1Z1"
+      },
+      "usage": {
+        "input_tokens": 1804,
+        "output_tokens": 96
+      },
+      "latency_seconds": 4.398848056793213,
+      "raw_response": "```json\n{\n  \"vendor\": \"Samrat Cycles & Kids Wheels\",\n  \"invoice_number\": \"1200\",\n  \"date\": \"04-03-2024\",\n  \"amount\": 6700,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN: 32AKWPN2281N1Z1\"\n}\n```",
+      "error": null
+    }
+  }
+}

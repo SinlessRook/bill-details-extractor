@@ -1,0 +1,81 @@
+{
+  "bill_filename": "Bill_2.jpg",
+  "results": {
+    "gemini": {
+      "bill_filename": "Bill_2.jpg",
+      "model": "gemini",
+      "fields": {
+        "vendor": "SAMSUDDIN SIDDIQUI",
+        "invoice_number": "287",
+        "date": "28-10-2024",
+        "amount": 7226,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 1336,
+        "output_tokens": 73
+      },
+      "latency_seconds": 6.419627666473389,
+      "raw_response": "{\n  \"vendor\": \"SAMSUDDIN SIDDIQUI\",\n  \"invoice_number\": \"287\",\n  \"date\": \"28-10-2024\",\n  \"amount\": 7226,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
+    },
+    "groq_qwen": {
+      "bill_filename": "Bill_2.jpg",
+      "model": "groq_qwen",
+      "fields": {
+        "vendor": "SAMSUDDIN SIDDIQUI",
+        "invoice_number": "287",
+        "date": "28-10-2024",
+        "amount": 7226,
+        "currency": "INR",
+        "gst_details": "PAN No. DODPS7841F"
+      },
+      "usage": {
+        "input_tokens": 2033,
+        "output_tokens": 371
+      },
+      "latency_seconds": 1.3221824169158936,
+      "raw_response": "\n<think>\nThe user wants the data from the receipt extracted into a specific JSON format.\n\n1.  **Vendor:** The header clearly says \"SAMSUDDIN SIDDIQUI\".\n2.  **Invoice Number:** The field \"Bill No.\" has the value \"287\".\n3.  **Date:** The field \"Date:\" has the value \"28/10/2024\".\n4.  **Amount:** The \"Total\" at the bottom is \"7226\".\n5.  **Currency:** The receipt is from India (Mumbai address, INR implied by context and \"Rupees in Word\"), so \"INR\".\n6.  **GST Details:** The PAN number \"DODPS7841F\" is visible. No specific GSTIN is explicitly labeled as \"GSTIN\", but the PAN is often used or related. I will extract the PAN as it's the only tax-related identifier visible. Wait, looking closer, the prompt asks for \"GST number, tax rate, or tax amount\". The PAN is present. I will include the PAN number as it's the closest tax identifier.\n\nLet's refine the GST details. The text \"PAN No. DODPS7841F\" is clearly visible. I will include that.\n\nConstructing the JSON.\n</think>\n\n```json\n{\n    \"vendor\": \"SAMSUDDIN SIDDIQUI\",\n    \"invoice_number\": \"287\",\n    \"date\": \"28-10-2024\",\n    \"amount\": 7226,\n    \"currency\": \"INR\",\n    \"gst_details\": \"PAN No. DODPS7841F\"\n}\n```",
+      "error": null
+    },
+    "gpt": {
+      "bill_filename": "Bill_2.jpg",
+      "model": "gpt",
+      "fields": {
+        "vendor": "SAMSUDDIN SIDDIQUI",
+        "invoice_number": "287",
+        "date": "28-10-2020",
+        "amount": 7226,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 25729,
+        "output_tokens": 59
+      },
+      "latency_seconds": 4.042887449264526,
+      "raw_response": "{\n  \"vendor\": \"SAMSUDDIN SIDDIQUI\",\n  \"invoice_number\": \"287\",\n  \"date\": \"28-10-2020\",\n  \"amount\": 7226,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
+    },
+    "claude": {
+      "bill_filename": "Bill_2.jpg",
+      "model": "claude",
+      "fields": {
+        "vendor": null,
+        "invoice_number": null,
+        "date": null,
+        "amount": null,
+        "currency": null,
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "latency_seconds": 4.239382743835449,
+      "raw_response": "",
+      "error": "Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_011CddmMosYWsjgjqr1VJ3Hb\"}', 'provider_name': 'Azure', 'is_byok': False, 'previous_errors': [{'code': 400, 'message': 'Provider returned error', 'provider_name': 'Amazon Bedrock', 'raw': '{\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Google', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_vrtx_011CddmMhhxwPwkkXQYHmVgu\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Anthropic', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_011CddmMm4std1X17irNLvB5\"}'}]}}, 'user_id': 'user_3HM6bKn1GhPiBnFtklBsCArwhtC'}"
+    }
+  }
+}

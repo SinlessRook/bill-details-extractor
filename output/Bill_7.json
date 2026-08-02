@@ -1,0 +1,81 @@
+{
+  "bill_filename": "Bill_7.jpeg",
+  "results": {
+    "gemini": {
+      "bill_filename": "Bill_7.jpeg",
+      "model": "gemini",
+      "fields": {
+        "vendor": "DHANWANTHARI VAIDYASALA",
+        "invoice_number": "25147",
+        "date": "18-06-2023",
+        "amount": 1397,
+        "currency": "INR",
+        "gst_details": "GSTIN No. 32AADFD6183E1ZR"
+      },
+      "usage": {
+        "input_tokens": 1336,
+        "output_tokens": 95
+      },
+      "latency_seconds": 7.147205114364624,
+      "raw_response": "{\n  \"vendor\": \"DHANWANTHARI VAIDYASALA\",\n  \"invoice_number\": \"25147\",\n  \"date\": \"18-06-2023\",\n  \"amount\": 1397,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN No. 32AADFD6183E1ZR\"\n}",
+      "error": null
+    },
+    "groq_qwen": {
+      "bill_filename": "Bill_7.jpeg",
+      "model": "groq_qwen",
+      "fields": {
+        "vendor": "DHANWANTHARI VAIDYASALA",
+        "invoice_number": "25147",
+        "date": "18-03-2025",
+        "amount": 1394,
+        "currency": "INR",
+        "gst_details": "GSTIN No. 32AADFD6183E1ZP"
+      },
+      "usage": {
+        "input_tokens": 2033,
+        "output_tokens": 291
+      },
+      "latency_seconds": 21.413273572921753,
+      "raw_response": "\n<think>\nThe user wants the data from the receipt extracted into a specific JSON format.\n\n1.  **Vendor:** The top of the receipt clearly says \"DHANWANTHARI VAIDYASALA\".\n2.  **Invoice Number:** The red stamped number is \"25147\".\n3.  **Date:** The handwritten date is \"18/03/25\". I need to format this as DD-MM-YYYY. It looks like 18-03-2025.\n4.  **Amount:** The total at the bottom right is \"1394\".\n5.  **Currency:** It's an Indian receipt, so \"INR\".\n6.  **GST Details:** The GSTIN is visible at the top right: \"32AADFD6183E1ZP\".\n\nLet's construct the JSON.\n</think>\n\n```json\n{\n    \"vendor\": \"DHANWANTHARI VAIDYASALA\",\n    \"invoice_number\": \"25147\",\n    \"date\": \"18-03-2025\",\n    \"amount\": 1394,\n    \"currency\": \"INR\",\n    \"gst_details\": \"GSTIN No. 32AADFD6183E1ZP\"\n}\n```",
+      "error": null
+    },
+    "gpt": {
+      "bill_filename": "Bill_7.jpeg",
+      "model": "gpt",
+      "fields": {
+        "vendor": "DHANWANTHARI VAIDYASALA",
+        "invoice_number": "25147",
+        "date": "18-06-2026",
+        "amount": 1397,
+        "currency": "INR",
+        "gst_details": "GSTIN No. 32AADFD6183E1ZR"
+      },
+      "usage": {
+        "input_tokens": 25729,
+        "output_tokens": 76
+      },
+      "latency_seconds": 2.323903799057007,
+      "raw_response": "{\n  \"vendor\": \"DHANWANTHARI VAIDYASALA\",\n  \"invoice_number\": \"25147\",\n  \"date\": \"18-06-2026\",\n  \"amount\": 1397,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN No. 32AADFD6183E1ZR\"\n}",
+      "error": null
+    },
+    "claude": {
+      "bill_filename": "Bill_7.jpeg",
+      "model": "claude",
+      "fields": {
+        "vendor": "DHANWANTHARI VAIDYASALA",
+        "invoice_number": "25147",
+        "date": null,
+        "amount": null,
+        "currency": "INR",
+        "gst_details": "GSTIN No. 32AADFD6183E1Z9"
+      },
+      "usage": {
+        "input_tokens": 1783,
+        "output_tokens": 91
+      },
+      "latency_seconds": 5.136363983154297,
+      "raw_response": "```json\n{\n  \"vendor\": \"DHANWANTHARI VAIDYASALA\",\n  \"invoice_number\": \"25147\",\n  \"date\": null,\n  \"amount\": null,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN No. 32AADFD6183E1Z9\"\n}\n```",
+      "error": null
+    }
+  }
+}

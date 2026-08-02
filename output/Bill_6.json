@@ -1,0 +1,81 @@
+{
+  "bill_filename": "Bill_6.jpeg",
+  "results": {
+    "gemini": {
+      "bill_filename": "Bill_6.jpeg",
+      "model": "gemini",
+      "fields": {
+        "vendor": "M.P. SHIJO NEWS PAPER AGENT",
+        "invoice_number": null,
+        "date": "March 2022",
+        "amount": 1200,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 1344,
+        "output_tokens": 64
+      },
+      "latency_seconds": 8.273425102233887,
+      "raw_response": "{\n\"vendor\": \"M.P. SHIJO NEWS PAPER AGENT\",\n\"invoice_number\": null,\n\"date\": \"March 2022\",\n\"amount\": 1200,\n\"currency\": \"INR\",\n\"gst_details\": null\n}",
+      "error": null
+    },
+    "groq_qwen": {
+      "bill_filename": "Bill_6.jpeg",
+      "model": "groq_qwen",
+      "fields": {
+        "vendor": "M.P. SHIJO NEWS PAPER AGENT",
+        "invoice_number": null,
+        "date": "March 2022",
+        "amount": 1200,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 2033,
+        "output_tokens": 297
+      },
+      "latency_seconds": 16.436034202575684,
+      "raw_response": "\n<think>\nThe user wants the data from the receipt extracted into a specific JSON format.\n\n1.  **Vendor:** The header clearly says \"M.P. SHIJO NEWS PAPER AGENT\".\n2.  **Invoice Number:** There is a field \"A/c. No.\" but it is blank. There is no other invoice number visible. So, null.\n3.  **Date:** The handwritten date is \"March 2022\". I need to format this. Since no specific day is given, I will use the raw text or a best guess. The prompt asks for DD-MM-YYYY if possible, otherwise raw text. \"March 2022\" is the raw text.\n4.  **Amount:** The total at the bottom is \"1200\".\n5.  **Currency:** It's an Indian receipt (Kerala address, Malayalam text at bottom), so \"INR\".\n6.  **GST Details:** I see \"G.Pay No.\" but no GST number or tax breakdown. So, null.\n</think>\n\n```json\n{\n    \"vendor\": \"M.P. SHIJO NEWS PAPER AGENT\",\n    \"invoice_number\": null,\n    \"date\": \"March 2022\",\n    \"amount\": 1200,\n    \"currency\": \"INR\",\n    \"gst_details\": null\n}\n```",
+      "error": null
+    },
+    "gpt": {
+      "bill_filename": "Bill_6.jpeg",
+      "model": "gpt",
+      "fields": {
+        "vendor": "M.P. SHIJO",
+        "invoice_number": null,
+        "date": "01-03-2022",
+        "amount": 120,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 25729,
+        "output_tokens": 55
+      },
+      "latency_seconds": 5.446295261383057,
+      "raw_response": "{\n  \"vendor\": \"M.P. SHIJO\",\n  \"invoice_number\": null,\n  \"date\": \"01-03-2022\",\n  \"amount\": 120,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
+    },
+    "claude": {
+      "bill_filename": "Bill_6.jpeg",
+      "model": "claude",
+      "fields": {
+        "vendor": "M.P. SHIJO NEWS PAPER AGENT",
+        "invoice_number": null,
+        "date": "March 2025",
+        "amount": 1200,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 1793,
+        "output_tokens": 77
+      },
+      "latency_seconds": 4.258839845657349,
+      "raw_response": "```json\n{\n  \"vendor\": \"M.P. SHIJO NEWS PAPER AGENT\",\n  \"invoice_number\": null,\n  \"date\": \"March 2025\",\n  \"amount\": 1200,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}\n```",
+      "error": null
+    }
+  }
+}

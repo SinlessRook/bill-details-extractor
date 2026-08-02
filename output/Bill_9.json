@@ -1,0 +1,81 @@
+{
+  "bill_filename": "Bill_9.jpeg",
+  "results": {
+    "gemini": {
+      "bill_filename": "Bill_9.jpeg",
+      "model": "gemini",
+      "fields": {
+        "vendor": "DHANWANTHARI VAIDYASALA",
+        "invoice_number": "21101",
+        "date": "12-01-2026",
+        "amount": 1305,
+        "currency": "INR",
+        "gst_details": "GSTIN No. 32AADFD6183E1ZR"
+      },
+      "usage": {
+        "input_tokens": 1336,
+        "output_tokens": 89
+      },
+      "latency_seconds": 5.6310155391693115,
+      "raw_response": "{\n\"vendor\": \"DHANWANTHARI VAIDYASALA\",\n\"invoice_number\": \"21101\",\n\"date\": \"12-01-2026\",\n\"amount\": 1305,\n\"currency\": \"INR\",\n\"gst_details\": \"GSTIN No. 32AADFD6183E1ZR\"\n}",
+      "error": null
+    },
+    "groq_qwen": {
+      "bill_filename": "Bill_9.jpeg",
+      "model": "groq_qwen",
+      "fields": {
+        "vendor": "DHANWANTHARI VAIDYASALA",
+        "invoice_number": "21101",
+        "date": "12/01/26",
+        "amount": 1205,
+        "currency": "INR",
+        "gst_details": "GSTIN No. 32AADFD6183E1ZR, Less 10%"
+      },
+      "usage": {
+        "input_tokens": 2035,
+        "output_tokens": 99
+      },
+      "latency_seconds": 1.0900957584381104,
+      "raw_response": "{\n  \"vendor\": \"DHANWANTHARI VAIDYASALA\",\n  \"invoice_number\": \"21101\",\n  \"date\": \"12/01/26\",\n  \"amount\": 1205,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN No. 32AADFD6183E1ZR, Less 10%\"\n}",
+      "error": null
+    },
+    "gpt": {
+      "bill_filename": "Bill_9.jpeg",
+      "model": "gpt",
+      "fields": {
+        "vendor": "DHANWANTHARI VAIDYASALA",
+        "invoice_number": "21101",
+        "date": "12-01-2026",
+        "amount": 1205,
+        "currency": "INR",
+        "gst_details": "GSTIN No. 32AADFD6183E1ZR"
+      },
+      "usage": {
+        "input_tokens": 25729,
+        "output_tokens": 77
+      },
+      "latency_seconds": 4.601683139801025,
+      "raw_response": "{\n  \"vendor\": \"DHANWANTHARI VAIDYASALA\",\n  \"invoice_number\": \"21101\",\n  \"date\": \"12-01-2026\",\n  \"amount\": 1205,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN No. 32AADFD6183E1ZR\"\n}",
+      "error": null
+    },
+    "claude": {
+      "bill_filename": "Bill_9.jpeg",
+      "model": "claude",
+      "fields": {
+        "vendor": "DHANWANTHARI VAIDYASALA",
+        "invoice_number": "21101",
+        "date": "12-01-2025",
+        "amount": null,
+        "currency": "INR",
+        "gst_details": "GSTIN No. 32AADFD6183E1ZR"
+      },
+      "usage": {
+        "input_tokens": 1783,
+        "output_tokens": 97
+      },
+      "latency_seconds": 7.000298738479614,
+      "raw_response": "```json\n{\n  \"vendor\": \"DHANWANTHARI VAIDYASALA\",\n  \"invoice_number\": \"21101\",\n  \"date\": \"12-01-2025\",\n  \"amount\": null,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN No. 32AADFD6183E1ZR\"\n}\n```",
+      "error": null
+    }
+  }
+}

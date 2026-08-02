@@ -1,0 +1,241 @@
+bill_filename,model,field,predicted,ground_truth,correct
+Bill_1.jpg,gemini,vendor,SRINIVASA BOOK STORE,SRINIVASA BOOK STORE,True
+Bill_1.jpg,gemini,invoice_number,4188,4188,True
+Bill_1.jpg,gemini,date,11-08-2022,14-08-2022,False
+Bill_1.jpg,gemini,amount,19000,19000,True
+Bill_1.jpg,gemini,currency,INR,INR,True
+Bill_1.jpg,gemini,gst_details,,,True
+Bill_1.jpg,groq_qwen,vendor,SRINIVASA BOOK STORE,SRINIVASA BOOK STORE,True
+Bill_1.jpg,groq_qwen,invoice_number,4188,4188,True
+Bill_1.jpg,groq_qwen,date,14-08-2022,14-08-2022,True
+Bill_1.jpg,groq_qwen,amount,19000,19000,True
+Bill_1.jpg,groq_qwen,currency,INR,INR,True
+Bill_1.jpg,groq_qwen,gst_details,,,True
+Bill_1.jpg,gpt,vendor,SRINIVASA BOOK STORE,SRINIVASA BOOK STORE,True
+Bill_1.jpg,gpt,invoice_number,4188,4188,True
+Bill_1.jpg,gpt,date,14-08-2022,14-08-2022,True
+Bill_1.jpg,gpt,amount,19600,19000,False
+Bill_1.jpg,gpt,currency,INR,INR,True
+Bill_1.jpg,gpt,gst_details,,,True
+Bill_1.jpg,claude,vendor,,SRINIVASA BOOK STORE,False
+Bill_1.jpg,claude,invoice_number,,4188,False
+Bill_1.jpg,claude,date,,14-08-2022,False
+Bill_1.jpg,claude,amount,,19000,False
+Bill_1.jpg,claude,currency,,INR,False
+Bill_1.jpg,claude,gst_details,,,True
+Bill_10.jpeg,gemini,vendor,KCM Appliances Pvt.. Ltd techzone,KCM Appliances Pvt. Ltd. (Techzone),True
+Bill_10.jpeg,gemini,invoice_number,PVR 026,PVR 026,True
+Bill_10.jpeg,gemini,date,27-05-2023,27-05-2026,False
+Bill_10.jpeg,gemini,amount,360,360,True
+Bill_10.jpeg,gemini,currency,INR,INR,True
+Bill_10.jpeg,gemini,gst_details,GSTIN/UIN: 32AAECK1982G1ZO; Taxable Value: 360; Tax amount: GST null; Total Amount after Tax: 360; CIN: U51100KL210PTC027225,GSTIN:32AAECK1982G1ZO,False
+Bill_10.jpeg,groq_qwen,vendor,KCM Appliances Pvt.. Ltd techzone,KCM Appliances Pvt. Ltd. (Techzone),True
+Bill_10.jpeg,groq_qwen,invoice_number,PVR 026,PVR 026,True
+Bill_10.jpeg,groq_qwen,date,07-05-2026,27-05-2026,False
+Bill_10.jpeg,groq_qwen,amount,360,360,True
+Bill_10.jpeg,groq_qwen,currency,INR,INR,True
+Bill_10.jpeg,groq_qwen,gst_details,GSTIN/UIN: 32AAECK1982G1ZO,GSTIN:32AAECK1982G1ZO,True
+Bill_10.jpeg,gpt,vendor,KCM Appliances Pvt. Ltd,KCM Appliances Pvt. Ltd. (Techzone),True
+Bill_10.jpeg,gpt,invoice_number,PVR 026,PVR 026,True
+Bill_10.jpeg,gpt,date,27-06-2020,27-05-2026,False
+Bill_10.jpeg,gpt,amount,360,360,True
+Bill_10.jpeg,gpt,currency,INR,INR,True
+Bill_10.jpeg,gpt,gst_details,,GSTIN:32AAECK1982G1ZO,False
+Bill_10.jpeg,claude,vendor,KCM Appliances Pvt. Ltd,KCM Appliances Pvt. Ltd. (Techzone),True
+Bill_10.jpeg,claude,invoice_number,PVR 026,PVR 026,True
+Bill_10.jpeg,claude,date,01-05-26,27-05-2026,False
+Bill_10.jpeg,claude,amount,360,360,True
+Bill_10.jpeg,claude,currency,INR,INR,True
+Bill_10.jpeg,claude,gst_details,GSTIN/UIN: 32AAECK1982G1ZO,GSTIN:32AAECK1982G1ZO,True
+Bill_2.jpg,gemini,vendor,SAMSUDDIN SIDDIQUI,SAMSUDDIN SIDDIQUI,True
+Bill_2.jpg,gemini,invoice_number,287,287,True
+Bill_2.jpg,gemini,date,28-10-2024,28-10-2024,True
+Bill_2.jpg,gemini,amount,7226,7226,True
+Bill_2.jpg,gemini,currency,INR,INR,True
+Bill_2.jpg,gemini,gst_details,,,True
+Bill_2.jpg,groq_qwen,vendor,SAMSUDDIN SIDDIQUI,SAMSUDDIN SIDDIQUI,True
+Bill_2.jpg,groq_qwen,invoice_number,287,287,True
+Bill_2.jpg,groq_qwen,date,28-10-2024,28-10-2024,True
+Bill_2.jpg,groq_qwen,amount,7226,7226,True
+Bill_2.jpg,groq_qwen,currency,INR,INR,True
+Bill_2.jpg,groq_qwen,gst_details,PAN No. DODPS7841F,,False
+Bill_2.jpg,gpt,vendor,SAMSUDDIN SIDDIQUI,SAMSUDDIN SIDDIQUI,True
+Bill_2.jpg,gpt,invoice_number,287,287,True
+Bill_2.jpg,gpt,date,28-10-2020,28-10-2024,False
+Bill_2.jpg,gpt,amount,7226,7226,True
+Bill_2.jpg,gpt,currency,INR,INR,True
+Bill_2.jpg,gpt,gst_details,,,True
+Bill_2.jpg,claude,vendor,,SAMSUDDIN SIDDIQUI,False
+Bill_2.jpg,claude,invoice_number,,287,False
+Bill_2.jpg,claude,date,,28-10-2024,False
+Bill_2.jpg,claude,amount,,7226,False
+Bill_2.jpg,claude,currency,,INR,False
+Bill_2.jpg,claude,gst_details,,,True
+Bill_3.jpg,gemini,vendor,VISHAL PUNJABI VAISHNO BHOJANALYA,VISHAL PUNJABI VAISHNO BHOJANALAYA,True
+Bill_3.jpg,gemini,invoice_number,1687,1687,True
+Bill_3.jpg,gemini,date,22-05-2007,29-08-2007,False
+Bill_3.jpg,gemini,amount,146,146,True
+Bill_3.jpg,gemini,currency,INR,INR,True
+Bill_3.jpg,gemini,gst_details,,,True
+Bill_3.jpg,groq_qwen,vendor,VISHAL PUNJABI VAISHNO BHOJANALYA,VISHAL PUNJABI VAISHNO BHOJANALAYA,True
+Bill_3.jpg,groq_qwen,invoice_number,1687,1687,True
+Bill_3.jpg,groq_qwen,date,29-05-2007,29-08-2007,False
+Bill_3.jpg,groq_qwen,amount,146,146,True
+Bill_3.jpg,groq_qwen,currency,INR,INR,True
+Bill_3.jpg,groq_qwen,gst_details,,,True
+Bill_3.jpg,gpt,vendor,VISHAL PUNJABI VAISHNO BHOJANALYA,VISHAL PUNJABI VAISHNO BHOJANALAYA,True
+Bill_3.jpg,gpt,invoice_number,1687,1687,True
+Bill_3.jpg,gpt,date,29-05-1999,29-08-2007,False
+Bill_3.jpg,gpt,amount,146,146,True
+Bill_3.jpg,gpt,currency,INR,INR,True
+Bill_3.jpg,gpt,gst_details,,,True
+Bill_3.jpg,claude,vendor,VISHAL PUNJABI VAISHNO BHOJANALYA,VISHAL PUNJABI VAISHNO BHOJANALAYA,True
+Bill_3.jpg,claude,invoice_number,1687,1687,True
+Bill_3.jpg,claude,date,29-01-09,29-08-2007,False
+Bill_3.jpg,claude,amount,146,146,True
+Bill_3.jpg,claude,currency,INR,INR,True
+Bill_3.jpg,claude,gst_details,,,True
+Bill_4.jpg,gemini,vendor,BHARAT ASSOCIATES,BHARAT ASSOCIATES,True
+Bill_4.jpg,gemini,invoice_number,004,004,True
+Bill_4.jpg,gemini,date,15-01-2024,15-11-2024,False
+Bill_4.jpg,gemini,amount,32345,32345,True
+Bill_4.jpg,gemini,currency,INR,INR,True
+Bill_4.jpg,gemini,gst_details,"GSTIN: 09GBVPS8212J1ZP, CGST: 9% (625), SGST: 9% (625), HSN CODE: 9982",GSTIN:09GBVPS8212J1ZP,True
+Bill_4.jpg,groq_qwen,vendor,BHARAT ASSOCIATES,BHARAT ASSOCIATES,True
+Bill_4.jpg,groq_qwen,invoice_number,004,004,True
+Bill_4.jpg,groq_qwen,date,15-11-2024,15-11-2024,True
+Bill_4.jpg,groq_qwen,amount,32345.0,32345,True
+Bill_4.jpg,groq_qwen,currency,INR,INR,True
+Bill_4.jpg,groq_qwen,gst_details,"09GBVPS8212J1ZP, CGST 9% 625.00, SGST 9% 625.00",GSTIN:09GBVPS8212J1ZP,False
+Bill_4.jpg,gpt,vendor,BHARAT ASSOCIATES,BHARAT ASSOCIATES,True
+Bill_4.jpg,gpt,invoice_number,004,004,True
+Bill_4.jpg,gpt,date,15-10-2023,15-11-2024,False
+Bill_4.jpg,gpt,amount,32345,32345,True
+Bill_4.jpg,gpt,currency,INR,INR,True
+Bill_4.jpg,gpt,gst_details,"CGST 9% 625, SGST 9% 625",GSTIN:09GBVPS8212J1ZP,False
+Bill_4.jpg,claude,vendor,,BHARAT ASSOCIATES,False
+Bill_4.jpg,claude,invoice_number,,004,False
+Bill_4.jpg,claude,date,,15-11-2024,False
+Bill_4.jpg,claude,amount,,32345,False
+Bill_4.jpg,claude,currency,,INR,False
+Bill_4.jpg,claude,gst_details,,GSTIN:09GBVPS8212J1ZP,False
+Bill_5.jpg,gemini,vendor,Vanakkam India Indian Restaurant,Vanakkam Thala Indian Restaurant,True
+Bill_5.jpg,gemini,invoice_number,01298,01298,True
+Bill_5.jpg,gemini,date,,,True
+Bill_5.jpg,gemini,amount,16.0,16.6,False
+Bill_5.jpg,gemini,currency,INR,INR,True
+Bill_5.jpg,gemini,gst_details,,,True
+Bill_5.jpg,groq_qwen,vendor,Vanakkam Thala Indian Restaurant,Vanakkam Thala Indian Restaurant,True
+Bill_5.jpg,groq_qwen,invoice_number,01298,01298,True
+Bill_5.jpg,groq_qwen,date,,,True
+Bill_5.jpg,groq_qwen,amount,16.6,16.6,True
+Bill_5.jpg,groq_qwen,currency,INR,INR,True
+Bill_5.jpg,groq_qwen,gst_details,,,True
+Bill_5.jpg,gpt,vendor,Vanakkam India,Vanakkam Thala Indian Restaurant,False
+Bill_5.jpg,gpt,invoice_number,01298,01298,True
+Bill_5.jpg,gpt,date,,,True
+Bill_5.jpg,gpt,amount,16,16.6,False
+Bill_5.jpg,gpt,currency,INR,INR,True
+Bill_5.jpg,gpt,gst_details,,,True
+Bill_5.jpg,claude,vendor,Vanakkam Thara Indian Restaurant,Vanakkam Thala Indian Restaurant,True
+Bill_5.jpg,claude,invoice_number,01298,01298,True
+Bill_5.jpg,claude,date,,,True
+Bill_5.jpg,claude,amount,166.6,16.6,False
+Bill_5.jpg,claude,currency,INR,INR,True
+Bill_5.jpg,claude,gst_details,,,True
+Bill_6.jpeg,gemini,vendor,M.P. SHIJO NEWS PAPER AGENT,M.P. SHIJO NEWS PAPER AGENT,True
+Bill_6.jpeg,gemini,invoice_number,,,True
+Bill_6.jpeg,gemini,date,March 2022,Mar-25,False
+Bill_6.jpeg,gemini,amount,1200,1200,True
+Bill_6.jpeg,gemini,currency,INR,INR,True
+Bill_6.jpeg,gemini,gst_details,,,True
+Bill_6.jpeg,groq_qwen,vendor,M.P. SHIJO NEWS PAPER AGENT,M.P. SHIJO NEWS PAPER AGENT,True
+Bill_6.jpeg,groq_qwen,invoice_number,,,True
+Bill_6.jpeg,groq_qwen,date,March 2022,Mar-25,False
+Bill_6.jpeg,groq_qwen,amount,1200,1200,True
+Bill_6.jpeg,groq_qwen,currency,INR,INR,True
+Bill_6.jpeg,groq_qwen,gst_details,,,True
+Bill_6.jpeg,gpt,vendor,M.P. SHIJO,M.P. SHIJO NEWS PAPER AGENT,True
+Bill_6.jpeg,gpt,invoice_number,,,True
+Bill_6.jpeg,gpt,date,01-03-2022,Mar-25,False
+Bill_6.jpeg,gpt,amount,120,1200,False
+Bill_6.jpeg,gpt,currency,INR,INR,True
+Bill_6.jpeg,gpt,gst_details,,,True
+Bill_6.jpeg,claude,vendor,M.P. SHIJO NEWS PAPER AGENT,M.P. SHIJO NEWS PAPER AGENT,True
+Bill_6.jpeg,claude,invoice_number,,,True
+Bill_6.jpeg,claude,date,March 2025,Mar-25,False
+Bill_6.jpeg,claude,amount,1200,1200,True
+Bill_6.jpeg,claude,currency,INR,INR,True
+Bill_6.jpeg,claude,gst_details,,,True
+Bill_7.jpeg,gemini,vendor,DHANWANTHARI VAIDYASALA,DHANWANTHARI VAIDYASALA,True
+Bill_7.jpeg,gemini,invoice_number,25147,25147,True
+Bill_7.jpeg,gemini,date,18-06-2023,18-06-2025,False
+Bill_7.jpeg,gemini,amount,1397,1397,True
+Bill_7.jpeg,gemini,currency,INR,INR,True
+Bill_7.jpeg,gemini,gst_details,GSTIN No. 32AADFD6183E1ZR,GSTIN:32AADFD6183E1ZR,True
+Bill_7.jpeg,groq_qwen,vendor,DHANWANTHARI VAIDYASALA,DHANWANTHARI VAIDYASALA,True
+Bill_7.jpeg,groq_qwen,invoice_number,25147,25147,True
+Bill_7.jpeg,groq_qwen,date,18-03-2025,18-06-2025,False
+Bill_7.jpeg,groq_qwen,amount,1394,1397,False
+Bill_7.jpeg,groq_qwen,currency,INR,INR,True
+Bill_7.jpeg,groq_qwen,gst_details,GSTIN No. 32AADFD6183E1ZP,GSTIN:32AADFD6183E1ZR,True
+Bill_7.jpeg,gpt,vendor,DHANWANTHARI VAIDYASALA,DHANWANTHARI VAIDYASALA,True
+Bill_7.jpeg,gpt,invoice_number,25147,25147,True
+Bill_7.jpeg,gpt,date,18-06-2026,18-06-2025,False
+Bill_7.jpeg,gpt,amount,1397,1397,True
+Bill_7.jpeg,gpt,currency,INR,INR,True
+Bill_7.jpeg,gpt,gst_details,GSTIN No. 32AADFD6183E1ZR,GSTIN:32AADFD6183E1ZR,True
+Bill_7.jpeg,claude,vendor,DHANWANTHARI VAIDYASALA,DHANWANTHARI VAIDYASALA,True
+Bill_7.jpeg,claude,invoice_number,25147,25147,True
+Bill_7.jpeg,claude,date,,18-06-2025,False
+Bill_7.jpeg,claude,amount,,1397,False
+Bill_7.jpeg,claude,currency,INR,INR,True
+Bill_7.jpeg,claude,gst_details,GSTIN No. 32AADFD6183E1Z9,GSTIN:32AADFD6183E1ZR,True
+Bill_8.jpeg,gemini,vendor,MINNALE SPORTLICH CYCLES & KIDS WHEELS,Minnal CYCLES & KIDS WHEELS,True
+Bill_8.jpeg,gemini,invoice_number,1268,1268,True
+Bill_8.jpeg,gemini,date,04-03-2024,04-03-2026,False
+Bill_8.jpeg,gemini,amount,6700,6700,True
+Bill_8.jpeg,gemini,currency,INR,INR,True
+Bill_8.jpeg,gemini,gst_details,GSTIN: 32AKWPN2281N1ZI,GSTIN:32AKWPN2281N1ZI,True
+Bill_8.jpeg,groq_qwen,vendor,CYCLES & KIDS WHEELS,Minnal CYCLES & KIDS WHEELS,True
+Bill_8.jpeg,groq_qwen,invoice_number,1268,1268,True
+Bill_8.jpeg,groq_qwen,date,04-03-2021,04-03-2026,False
+Bill_8.jpeg,groq_qwen,amount,6700,6700,True
+Bill_8.jpeg,groq_qwen,currency,INR,INR,True
+Bill_8.jpeg,groq_qwen,gst_details,32AKWPN2281N1ZI,GSTIN:32AKWPN2281N1ZI,True
+Bill_8.jpeg,gpt,vendor,Timro Cycles & Kids Wheels,Minnal CYCLES & KIDS WHEELS,False
+Bill_8.jpeg,gpt,invoice_number,12680,1268,False
+Bill_8.jpeg,gpt,date,04-03-2016,04-03-2026,False
+Bill_8.jpeg,gpt,amount,6700,6700,True
+Bill_8.jpeg,gpt,currency,INR,INR,True
+Bill_8.jpeg,gpt,gst_details,GSTIN: 32AKWP2281N1Z1,GSTIN:32AKWPN2281N1ZI,True
+Bill_8.jpeg,claude,vendor,Samrat Cycles & Kids Wheels,Minnal CYCLES & KIDS WHEELS,False
+Bill_8.jpeg,claude,invoice_number,1200,1268,False
+Bill_8.jpeg,claude,date,04-03-2024,04-03-2026,False
+Bill_8.jpeg,claude,amount,6700,6700,True
+Bill_8.jpeg,claude,currency,INR,INR,True
+Bill_8.jpeg,claude,gst_details,GSTIN: 32AKWPN2281N1Z1,GSTIN:32AKWPN2281N1ZI,True
+Bill_9.jpeg,gemini,vendor,DHANWANTHARI VAIDYASALA,DHANWANTHARI VAIDYASALA,True
+Bill_9.jpeg,gemini,invoice_number,21101,21101,True
+Bill_9.jpeg,gemini,date,12-01-2026,12-01-2026,True
+Bill_9.jpeg,gemini,amount,1305,1305,True
+Bill_9.jpeg,gemini,currency,INR,INR,True
+Bill_9.jpeg,gemini,gst_details,GSTIN No. 32AADFD6183E1ZR,GSTIN:32AADFD6183E1ZR,True
+Bill_9.jpeg,groq_qwen,vendor,DHANWANTHARI VAIDYASALA,DHANWANTHARI VAIDYASALA,True
+Bill_9.jpeg,groq_qwen,invoice_number,21101,21101,True
+Bill_9.jpeg,groq_qwen,date,12/01/26,12-01-2026,True
+Bill_9.jpeg,groq_qwen,amount,1205,1305,False
+Bill_9.jpeg,groq_qwen,currency,INR,INR,True
+Bill_9.jpeg,groq_qwen,gst_details,"GSTIN No. 32AADFD6183E1ZR, Less 10%",GSTIN:32AADFD6183E1ZR,True
+Bill_9.jpeg,gpt,vendor,DHANWANTHARI VAIDYASALA,DHANWANTHARI VAIDYASALA,True
+Bill_9.jpeg,gpt,invoice_number,21101,21101,True
+Bill_9.jpeg,gpt,date,12-01-2026,12-01-2026,True
+Bill_9.jpeg,gpt,amount,1205,1305,False
+Bill_9.jpeg,gpt,currency,INR,INR,True
+Bill_9.jpeg,gpt,gst_details,GSTIN No. 32AADFD6183E1ZR,GSTIN:32AADFD6183E1ZR,True
+Bill_9.jpeg,claude,vendor,DHANWANTHARI VAIDYASALA,DHANWANTHARI VAIDYASALA,True
+Bill_9.jpeg,claude,invoice_number,21101,21101,True
+Bill_9.jpeg,claude,date,12-01-2025,12-01-2026,False
+Bill_9.jpeg,claude,amount,,1305,False
+Bill_9.jpeg,claude,currency,INR,INR,True
+Bill_9.jpeg,claude,gst_details,GSTIN No. 32AADFD6183E1ZR,GSTIN:32AADFD6183E1ZR,True

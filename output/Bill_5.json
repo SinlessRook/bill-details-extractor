@@ -1,0 +1,81 @@
+{
+  "bill_filename": "Bill_5.jpg",
+  "results": {
+    "gemini": {
+      "bill_filename": "Bill_5.jpg",
+      "model": "gemini",
+      "fields": {
+        "vendor": "Vanakkam India Indian Restaurant",
+        "invoice_number": "01298",
+        "date": null,
+        "amount": 16.0,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 1336,
+        "output_tokens": 64
+      },
+      "latency_seconds": 5.075194835662842,
+      "raw_response": "{\n  \"vendor\": \"Vanakkam India Indian Restaurant\",\n  \"invoice_number\": \"01298\",\n  \"date\": null,\n  \"amount\": 16.00,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
+    },
+    "groq_qwen": {
+      "bill_filename": "Bill_5.jpg",
+      "model": "groq_qwen",
+      "fields": {
+        "vendor": "Vanakkam Thala Indian Restaurant",
+        "invoice_number": "01298",
+        "date": null,
+        "amount": 16.6,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 2033,
+        "output_tokens": 601
+      },
+      "latency_seconds": 23.995710134506226,
+      "raw_response": "\n<think>\nThe user wants the data from the receipt extracted into a specific JSON format.\n\n1.  **Vendor:** The top of the receipt says \"Vanakkam Thala\" (partially cut off in the first crop, but visible in the second) and \"Indian Restaurant\". The full name is likely \"Vanakkam Thala Indian Restaurant\" or just \"Vanakkam Indian Restaurant\". Looking closely at the first image, it says \"Vanakkam Thala\" on the first line and \"Indian Restaurant\" on the second. Wait, looking at the second crop, it says \"Vanakkam\" and then \"Indian Restaur...\". The first crop shows \"Vanakkam Thala\". Let's combine them: \"Vanakkam Thala Indian Restaurant\".\n2.  **Invoice Number:** The receipt has \"Bill No: 01298\".\n3.  **Date:** The \"DATE:\" field is blank. There is a handwritten \"31\" near the date line, but it's not clearly a full date. I will return null for the date as no full date is written.\n4.  **Amount:** The total at the bottom is \"16.60\".\n5.  **Currency:** The prompt says assume \"INR\" if not specified. The address mentions \"Sihanoukville\" (implied by \"near PUB Street, Sinn Komp, Cambodia\" - wait, looking closer at the address: \"Opposite Provincial hospital near PUB Street, Sinn Komp, Cambodia\"). This is actually a receipt from Cambodia, not India, despite the prompt's premise. However, the prompt explicitly says \"from India\" and \"assume INR\". I must follow the prompt's instruction to assume INR if not specified, even though the address suggests Cambodia (Riel might be the actual currency, but the prompt forces INR). Wait, looking at the phone number: (+855) is Cambodia. The prompt says \"from India\". This is a trick or a mistake in the prompt's premise. I must follow the extraction rules. The prompt says \"currency: the currency code, e.g. 'INR', if not specified assume 'INR'\". Since no currency symbol is on the bill, I will use \"INR\" as instructed.\n6.  **GST Details:** There is no GST number or tax breakdown visible.\n\nRefining Vendor: \"Vanakkam Thala Indian Restaurant\".\nRefining Amount: 16.60.\nRefining Date: null (field is empty).\n</think>\n\n```json\n{\n    \"vendor\": \"Vanakkam Thala Indian Restaurant\",\n    \"invoice_number\": \"01298\",\n    \"date\": null,\n    \"amount\": 16.60,\n    \"currency\": \"INR\",\n    \"gst_details\": null\n}\n```",
+      "error": null
+    },
+    "gpt": {
+      "bill_filename": "Bill_5.jpg",
+      "model": "gpt",
+      "fields": {
+        "vendor": "Vanakkam India",
+        "invoice_number": "01298",
+        "date": null,
+        "amount": 16,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 8728,
+        "output_tokens": 49
+      },
+      "latency_seconds": 1.3020095825195312,
+      "raw_response": "{\n  \"vendor\": \"Vanakkam India\",\n  \"invoice_number\": \"01298\",\n  \"date\": null,\n  \"amount\": 16,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
+    },
+    "claude": {
+      "bill_filename": "Bill_5.jpg",
+      "model": "claude",
+      "fields": {
+        "vendor": "Vanakkam Thara Indian Restaurant",
+        "invoice_number": "01298",
+        "date": null,
+        "amount": 166.6,
+        "currency": "INR",
+        "gst_details": null
+      },
+      "usage": {
+        "input_tokens": 474,
+        "output_tokens": 73
+      },
+      "latency_seconds": 6.559244155883789,
+      "raw_response": "```json\n{\n  \"vendor\": \"Vanakkam Thara Indian Restaurant\",\n  \"invoice_number\": \"01298\",\n  \"date\": null,\n  \"amount\": 166.60,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}\n```",
+      "error": null
+    }
+  }
+}
