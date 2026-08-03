@@ -18,9 +18,33 @@ The workflow is:
 
 ## Screenshots
 
-Sample bill images used in this project:
+UI screenshots:
 
-![Sample bill 1](Bills/Bill_1.jpg)
+### 1. Uploading
+
+![Upload screen placeholder](screenshots/uploading.png)
+
+### 2. Zoho Upload
+
+<table>
+	<tr>
+		<td><img src="screenshots/zoho-upload-1.png" alt="Zoho upload screenshot 1" /></td>
+		<td><img src="screenshots/zoho-upload-2.png" alt="Zoho upload screenshot 2" /></td>
+	</tr>
+</table>
+
+### 3. Analytics
+
+<table>
+	<tr>
+		<td><img src="screenshots/analytics-1.png" alt="Analytics screenshot 1" /></td>
+		<td><img src="screenshots/analytics-2.png" alt="Analytics screenshot 2" /></td>
+	</tr>
+	<tr>
+		<td><img src="screenshots/analytics-3.png" alt="Analytics screenshot 3" /></td>
+		<td><img src="screenshots/analytics-4.png" alt="Analytics screenshot 4" /></td>
+	</tr>
+</table>
 
 
 ## Features
