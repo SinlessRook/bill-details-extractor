@@ -22,14 +22,14 @@ UI screenshots:
 
 ### 1. Uploading
 
-![Upload screen placeholder](screenshots/uploading.png)
+![Upload screen placeholder](Screenshots/uploading.png)
 
 ### 2. Zoho Upload
 
 <table>
 	<tr>
-		<td><img src="screenshots/zoho-upload-1.png" alt="Zoho upload screenshot 1" /></td>
-		<td><img src="screenshots/zoho-upload-2.png" alt="Zoho upload screenshot 2" /></td>
+		<td><img src="Screenshots/zoho-upload-1.png" alt="Zoho upload Screenshotsnshot 1" /></td>
+		<td><img src="Screenshots/zoho-upload-2.png" alt="Zoho upload Screenshotsnshot 2" /></td>
 	</tr>
 </table>
 
@@ -37,12 +37,12 @@ UI screenshots:
 
 <table>
 	<tr>
-		<td><img src="screenshots/analytics-1.png" alt="Analytics screenshot 1" /></td>
-		<td><img src="screenshots/analytics-2.png" alt="Analytics screenshot 2" /></td>
+		<td><img src="Screenshots/analytics-1.png" alt="Analytics Screenshotsnshot 1" /></td>
+		<td><img src="Screenshots/analytics-2.png" alt="Analytics Screenshotsnshot 2" /></td>
 	</tr>
 	<tr>
-		<td><img src="screenshots/analytics-3.png" alt="Analytics screenshot 3" /></td>
-		<td><img src="screenshots/analytics-4.png" alt="Analytics screenshot 4" /></td>
+		<td><img src="Screenshots/analytics-3.png" alt="Analytics Screenshotsnshot 3" /></td>
+		<td><img src="Screenshots/analytics-4.png" alt="Analytics screenshot 4" /></td>
 	</tr>
 </table>
 
