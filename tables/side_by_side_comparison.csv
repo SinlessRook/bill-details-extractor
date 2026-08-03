@@ -1,9 +1,9 @@
 bill_filename,field,ground_truth,claude_extracted,claude_correct,gemini_extracted,gemini_correct,gpt_extracted,gpt_correct,groq_qwen_extracted,groq_qwen_correct
-Bill_1.jpg,vendor,SRINIVASA BOOK STORE,,False,SRINIVASA BOOK STORE,True,SRINIVASA BOOK STORE,True,SRINIVASA BOOK STORE,True
-Bill_1.jpg,invoice_number,4188,,False,4188,True,4188,True,4188,True
-Bill_1.jpg,date,14-08-2022,,False,11-08-2022,False,14-08-2022,True,14-08-2022,True
-Bill_1.jpg,amount,19000,,False,19000,True,19600,False,19000,True
-Bill_1.jpg,currency,INR,,False,INR,True,INR,True,INR,True
+Bill_1.jpg,vendor,SRINIVASA BOOK STORE,SRINIVASA BOOK STORE,True,SRINIVASA BOOK STORE,True,SRINIVASA BOOK STORE,True,SRINIVASA BOOK STORE,True
+Bill_1.jpg,invoice_number,4188,4188,True,4188,True,4188,True,4188,True
+Bill_1.jpg,date,14-08-2022,14-08-2022,True,11-08-2022,False,14-08-2022,True,14-08-2022,True
+Bill_1.jpg,amount,19000,19600,False,19000,True,19600,False,19000,True
+Bill_1.jpg,currency,INR,INR,True,INR,True,INR,True,INR,True
 Bill_1.jpg,gst_details,,,True,,True,,True,,True
 Bill_10.jpeg,vendor,KCM Appliances Pvt. Ltd. (Techzone),KCM Appliances Pvt. Ltd,True,KCM Appliances Pvt.. Ltd techzone,True,KCM Appliances Pvt. Ltd,True,KCM Appliances Pvt.. Ltd techzone,True
 Bill_10.jpeg,invoice_number,PVR 026,PVR 026,True,PVR 026,True,PVR 026,True,PVR 026,True
@@ -11,11 +11,11 @@ Bill_10.jpeg,date,27-05-2026,01-05-26,False,27-05-2023,False,27-06-2020,False,07
 Bill_10.jpeg,amount,360,360,True,360,True,360,True,360,True
 Bill_10.jpeg,currency,INR,INR,True,INR,True,INR,True,INR,True
 Bill_10.jpeg,gst_details,GSTIN:32AAECK1982G1ZO,GSTIN/UIN: 32AAECK1982G1ZO,True,GSTIN/UIN: 32AAECK1982G1ZO; Taxable Value: 360; Tax amount: GST null; Total Amount after Tax: 360; CIN: U51100KL210PTC027225,False,,False,GSTIN/UIN: 32AAECK1982G1ZO,True
-Bill_2.jpg,vendor,SAMSUDDIN SIDDIQUI,,False,SAMSUDDIN SIDDIQUI,True,SAMSUDDIN SIDDIQUI,True,SAMSUDDIN SIDDIQUI,True
-Bill_2.jpg,invoice_number,287,,False,287,True,287,True,287,True
-Bill_2.jpg,date,28-10-2024,,False,28-10-2024,True,28-10-2020,False,28-10-2024,True
-Bill_2.jpg,amount,7226,,False,7226,True,7226,True,7226,True
-Bill_2.jpg,currency,INR,,False,INR,True,INR,True,INR,True
+Bill_2.jpg,vendor,SAMSUDDIN SIDDIQUI,SAMSUDDIN SIDDIQUI,True,SAMSUDDIN SIDDIQUI,True,SAMSUDDIN SIDDIQUI,True,SAMSUDDIN SIDDIQUI,True
+Bill_2.jpg,invoice_number,287,287,True,287,True,287,True,287,True
+Bill_2.jpg,date,28-10-2024,28/10/2024,True,28-10-2024,True,28-10-2020,False,28-10-2024,True
+Bill_2.jpg,amount,7226,7226,True,7226,True,7226,True,7226,True
+Bill_2.jpg,currency,INR,INR,True,INR,True,INR,True,INR,True
 Bill_2.jpg,gst_details,,,True,,True,,True,PAN No. DODPS7841F,False
 Bill_3.jpg,vendor,VISHAL PUNJABI VAISHNO BHOJANALAYA,VISHAL PUNJABI VAISHNO BHOJANALYA,True,VISHAL PUNJABI VAISHNO BHOJANALYA,True,VISHAL PUNJABI VAISHNO BHOJANALYA,True,VISHAL PUNJABI VAISHNO BHOJANALYA,True
 Bill_3.jpg,invoice_number,1687,1687,True,1687,True,1687,True,1687,True
@@ -23,12 +23,12 @@ Bill_3.jpg,date,29-08-2007,29-01-09,False,22-05-2007,False,29-05-1999,False,29-0
 Bill_3.jpg,amount,146,146,True,146,True,146,True,146,True
 Bill_3.jpg,currency,INR,INR,True,INR,True,INR,True,INR,True
 Bill_3.jpg,gst_details,,,True,,True,,True,,True
-Bill_4.jpg,vendor,BHARAT ASSOCIATES,,False,BHARAT ASSOCIATES,True,BHARAT ASSOCIATES,True,BHARAT ASSOCIATES,True
-Bill_4.jpg,invoice_number,004,,False,004,True,004,True,004,True
-Bill_4.jpg,date,15-11-2024,,False,15-01-2024,False,15-10-2023,False,15-11-2024,True
-Bill_4.jpg,amount,32345,,False,32345,True,32345,True,32345.0,True
-Bill_4.jpg,currency,INR,,False,INR,True,INR,True,INR,True
-Bill_4.jpg,gst_details,GSTIN:09GBVPS8212J1ZP,,False,"GSTIN: 09GBVPS8212J1ZP, CGST: 9% (625), SGST: 9% (625), HSN CODE: 9982",True,"CGST 9% 625, SGST 9% 625",False,"09GBVPS8212J1ZP, CGST 9% 625.00, SGST 9% 625.00",False
+Bill_4.jpg,vendor,BHARAT ASSOCIATES,BHARAT ASSOCIATES,True,BHARAT ASSOCIATES,True,BHARAT ASSOCIATES,True,BHARAT ASSOCIATES,True
+Bill_4.jpg,invoice_number,004,004,True,004,True,004,True,004,True
+Bill_4.jpg,date,15-11-2024,15-01-2024,False,15-01-2024,False,15-10-2023,False,15-11-2024,True
+Bill_4.jpg,amount,32345,323453,False,32345,True,32345,True,32345.0,True
+Bill_4.jpg,currency,INR,INR,True,INR,True,INR,True,INR,True
+Bill_4.jpg,gst_details,GSTIN:09GBVPS8212J1ZP,"GSTIN: 09GBVPS8212J1ZP, CGST 7%, SGST 7%, IGST not applicable",True,"GSTIN: 09GBVPS8212J1ZP, CGST: 9% (625), SGST: 9% (625), HSN CODE: 9982",True,"CGST 9% 625, SGST 9% 625",False,"09GBVPS8212J1ZP, CGST 9% 625.00, SGST 9% 625.00",False
 Bill_5.jpg,vendor,Vanakkam Thala Indian Restaurant,Vanakkam Thara Indian Restaurant,True,Vanakkam India Indian Restaurant,True,Vanakkam India,False,Vanakkam Thala Indian Restaurant,True
 Bill_5.jpg,invoice_number,01298,01298,True,01298,True,01298,True,01298,True
 Bill_5.jpg,date,,,True,,True,,True,,True

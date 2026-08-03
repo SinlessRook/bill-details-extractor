@@ -11,7 +11,7 @@ import time
 from google import genai
 from google.genai import types
 
-from extractors.common import EXTRACTION_PROMPT, parse_model_json, build_result_record
+from extractors.common import EXTRACTION_PROMPT, parse_model_json, build_result_record,get_image_mime_type
 
 MODEL_NAME = "gemini-3-flash-preview"
 
@@ -34,7 +34,7 @@ def extract(image_path: str) -> dict:
     with open(image_path, "rb") as f:
         image_bytes = f.read()
 
-    mime_type = "image/png" if image_path.lower().endswith(".png") else "image/jpeg"
+    mime_type = get_image_mime_type(image_path)
 
     start = time.time()
     try:

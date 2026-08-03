@@ -62,20 +62,20 @@
       "bill_filename": "Bill_1.jpg",
       "model": "claude",
       "fields": {
-        "vendor": null,
-        "invoice_number": null,
-        "date": null,
-        "amount": null,
-        "currency": null,
+        "vendor": "SRINIVASA BOOK STORE",
+        "invoice_number": "4188",
+        "date": "14-08-2022",
+        "amount": 19600,
+        "currency": "INR",
         "gst_details": null
       },
       "usage": {
-        "input_tokens": 0,
-        "output_tokens": 0
+        "input_tokens": 1821,
+        "output_tokens": 78
       },
-      "latency_seconds": 8.079255104064941,
-      "raw_response": "",
-      "error": "Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_011CddmLANXgshwgZS6xkTFh\"}', 'provider_name': 'Azure', 'is_byok': False, 'previous_errors': [{'code': 400, 'message': 'Provider returned error', 'provider_name': 'Amazon Bedrock', 'raw': '{\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Google', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_vrtx_011CddmKyTT3LwGxfRFDXtWX\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Anthropic', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_011CddmL31mSTGNCTHjWdinv\"}'}]}}, 'user_id': 'user_3HM6bKn1GhPiBnFtklBsCArwhtC'}"
+      "latency_seconds": 9.47269320487976,
+      "raw_response": "```json\n{\n  \"vendor\": \"SRINIVASA BOOK STORE\",\n  \"invoice_number\": \"4188\",\n  \"date\": \"14-08-2022\",\n  \"amount\": 19600,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}\n```",
+      "error": null
     }
   }
 }

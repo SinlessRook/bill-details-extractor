@@ -9,6 +9,7 @@ identical.
 
 import json
 import re
+from PIL import Image
 
 # The exact fields every extractor must return.
 SCHEMA_FIELDS = [
@@ -36,6 +37,29 @@ Rules:
 - Do not include any commentary before or after the JSON.
 """
 
+
+
+def get_image_mime_type(image_path: str) -> str:
+    """
+    Detect the actual image MIME type from the file contents.
+
+    Supports JPEG, PNG, WEBP, GIF, BMP and TIFF.
+    Falls back to image/jpeg if the format is unknown.
+    """
+    with Image.open(image_path) as img:
+        fmt = img.format.upper()
+
+    mapping = {
+        "JPEG": "image/jpeg",
+        "JPG": "image/jpeg",
+        "PNG": "image/png",
+        "WEBP": "image/webp",
+        "GIF": "image/gif",
+        "BMP": "image/bmp",
+        "TIFF": "image/tiff",
+    }
+
+    return mapping.get(fmt, "image/jpeg")
 
 def parse_model_json(raw_text: str) -> dict:
     """

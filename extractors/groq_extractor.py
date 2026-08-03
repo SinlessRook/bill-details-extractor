@@ -12,7 +12,7 @@ import base64
 
 from groq import Groq
 
-from extractors.common import EXTRACTION_PROMPT, parse_model_json, build_result_record
+from extractors.common import EXTRACTION_PROMPT, parse_model_json, build_result_record,get_image_mime_type
 
 MODEL_NAME = "qwen/qwen3.6-27b"
 
@@ -33,7 +33,7 @@ def extract(image_path: str) -> dict:
     bill_filename = os.path.basename(image_path)
     client = _get_client()
 
-    mime_type = "image/png" if image_path.lower().endswith(".png") else "image/jpeg"
+    mime_type = get_image_mime_type(image_path)
     base64_image = _encode_image(image_path)
 
     start = time.time()

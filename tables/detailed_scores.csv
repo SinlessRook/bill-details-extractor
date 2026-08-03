@@ -17,11 +17,11 @@ Bill_1.jpg,gpt,date,14-08-2022,14-08-2022,True
 Bill_1.jpg,gpt,amount,19600,19000,False
 Bill_1.jpg,gpt,currency,INR,INR,True
 Bill_1.jpg,gpt,gst_details,,,True
-Bill_1.jpg,claude,vendor,,SRINIVASA BOOK STORE,False
-Bill_1.jpg,claude,invoice_number,,4188,False
-Bill_1.jpg,claude,date,,14-08-2022,False
-Bill_1.jpg,claude,amount,,19000,False
-Bill_1.jpg,claude,currency,,INR,False
+Bill_1.jpg,claude,vendor,SRINIVASA BOOK STORE,SRINIVASA BOOK STORE,True
+Bill_1.jpg,claude,invoice_number,4188,4188,True
+Bill_1.jpg,claude,date,14-08-2022,14-08-2022,True
+Bill_1.jpg,claude,amount,19600,19000,False
+Bill_1.jpg,claude,currency,INR,INR,True
 Bill_1.jpg,claude,gst_details,,,True
 Bill_10.jpeg,gemini,vendor,KCM Appliances Pvt.. Ltd techzone,KCM Appliances Pvt. Ltd. (Techzone),True
 Bill_10.jpeg,gemini,invoice_number,PVR 026,PVR 026,True
@@ -65,11 +65,11 @@ Bill_2.jpg,gpt,date,28-10-2020,28-10-2024,False
 Bill_2.jpg,gpt,amount,7226,7226,True
 Bill_2.jpg,gpt,currency,INR,INR,True
 Bill_2.jpg,gpt,gst_details,,,True
-Bill_2.jpg,claude,vendor,,SAMSUDDIN SIDDIQUI,False
-Bill_2.jpg,claude,invoice_number,,287,False
-Bill_2.jpg,claude,date,,28-10-2024,False
-Bill_2.jpg,claude,amount,,7226,False
-Bill_2.jpg,claude,currency,,INR,False
+Bill_2.jpg,claude,vendor,SAMSUDDIN SIDDIQUI,SAMSUDDIN SIDDIQUI,True
+Bill_2.jpg,claude,invoice_number,287,287,True
+Bill_2.jpg,claude,date,28/10/2024,28-10-2024,True
+Bill_2.jpg,claude,amount,7226,7226,True
+Bill_2.jpg,claude,currency,INR,INR,True
 Bill_2.jpg,claude,gst_details,,,True
 Bill_3.jpg,gemini,vendor,VISHAL PUNJABI VAISHNO BHOJANALYA,VISHAL PUNJABI VAISHNO BHOJANALAYA,True
 Bill_3.jpg,gemini,invoice_number,1687,1687,True
@@ -113,12 +113,12 @@ Bill_4.jpg,gpt,date,15-10-2023,15-11-2024,False
 Bill_4.jpg,gpt,amount,32345,32345,True
 Bill_4.jpg,gpt,currency,INR,INR,True
 Bill_4.jpg,gpt,gst_details,"CGST 9% 625, SGST 9% 625",GSTIN:09GBVPS8212J1ZP,False
-Bill_4.jpg,claude,vendor,,BHARAT ASSOCIATES,False
-Bill_4.jpg,claude,invoice_number,,004,False
-Bill_4.jpg,claude,date,,15-11-2024,False
-Bill_4.jpg,claude,amount,,32345,False
-Bill_4.jpg,claude,currency,,INR,False
-Bill_4.jpg,claude,gst_details,,GSTIN:09GBVPS8212J1ZP,False
+Bill_4.jpg,claude,vendor,BHARAT ASSOCIATES,BHARAT ASSOCIATES,True
+Bill_4.jpg,claude,invoice_number,004,004,True
+Bill_4.jpg,claude,date,15-01-2024,15-11-2024,False
+Bill_4.jpg,claude,amount,323453,32345,False
+Bill_4.jpg,claude,currency,INR,INR,True
+Bill_4.jpg,claude,gst_details,"GSTIN: 09GBVPS8212J1ZP, CGST 7%, SGST 7%, IGST not applicable",GSTIN:09GBVPS8212J1ZP,True
 Bill_5.jpg,gemini,vendor,Vanakkam India Indian Restaurant,Vanakkam Thala Indian Restaurant,True
 Bill_5.jpg,gemini,invoice_number,01298,01298,True
 Bill_5.jpg,gemini,date,,,True

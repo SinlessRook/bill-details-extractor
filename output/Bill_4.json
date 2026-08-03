@@ -62,20 +62,20 @@
       "bill_filename": "Bill_4.jpg",
       "model": "claude",
       "fields": {
-        "vendor": null,
-        "invoice_number": null,
-        "date": null,
-        "amount": null,
-        "currency": null,
-        "gst_details": null
+        "vendor": "BHARAT ASSOCIATES",
+        "invoice_number": "004",
+        "date": "15-01-2024",
+        "amount": 323453,
+        "currency": "INR",
+        "gst_details": "GSTIN: 09GBVPS8212J1ZP, CGST 7%, SGST 7%, IGST not applicable"
       },
       "usage": {
-        "input_tokens": 0,
-        "output_tokens": 0
+        "input_tokens": 1804,
+        "output_tokens": 108
       },
-      "latency_seconds": 6.671842813491821,
-      "raw_response": "",
-      "error": "Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_011CddmNdjsbKxaCRQA7SksH\"}', 'provider_name': 'Azure', 'is_byok': False, 'previous_errors': [{'code': 400, 'message': 'Provider returned error', 'provider_name': 'Amazon Bedrock', 'raw': '{\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Google', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_vrtx_011CddmNSmKkaJabpqNdLLwK\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Anthropic', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64: The image was specified using the image/jpeg media type, but the image appears to be a image/webp image\"},\"request_id\":\"req_011CddmNWDSQrSwj2Kkq6Kne\"}'}]}}, 'user_id': 'user_3HM6bKn1GhPiBnFtklBsCArwhtC'}"
+      "latency_seconds": 5.027376651763916,
+      "raw_response": "```json\n{\n  \"vendor\": \"BHARAT ASSOCIATES\",\n  \"invoice_number\": \"004\",\n  \"date\": \"15-01-2024\",\n  \"amount\": 323453,\n  \"currency\": \"INR\",\n  \"gst_details\": \"GSTIN: 09GBVPS8212J1ZP, CGST 7%, SGST 7%, IGST not applicable\"\n}\n```",
+      "error": null
     }
   }
 }

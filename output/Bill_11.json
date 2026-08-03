@@ -24,58 +24,58 @@
       "bill_filename": "Bill_11.jpg",
       "model": "groq_qwen",
       "fields": {
-        "vendor": null,
-        "invoice_number": null,
-        "date": null,
-        "amount": null,
-        "currency": null,
+        "vendor": "Manish Taxi Service",
+        "invoice_number": "147",
+        "date": "17-06-2025",
+        "amount": 2520,
+        "currency": "INR",
         "gst_details": null
       },
       "usage": {
-        "input_tokens": 0,
-        "output_tokens": 0
+        "input_tokens": 1523,
+        "output_tokens": 70
       },
-      "latency_seconds": 0.32017016410827637,
-      "raw_response": "",
-      "error": "Error code: 400 - {'error': {'message': 'invalid image data', 'type': 'invalid_request_error'}}"
+      "latency_seconds": 1.550055742263794,
+      "raw_response": "{\n  \"vendor\": \"Manish Taxi Service\",\n  \"invoice_number\": \"147\",\n  \"date\": \"17-06-2025\",\n  \"amount\": 2520,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
     },
     "gpt": {
       "bill_filename": "Bill_11.jpg",
       "model": "gpt",
       "fields": {
-        "vendor": null,
-        "invoice_number": null,
-        "date": null,
-        "amount": null,
-        "currency": null,
+        "vendor": "Manish Taxi Service",
+        "invoice_number": "147",
+        "date": "17-06-2025",
+        "amount": 2520,
+        "currency": "INR",
         "gst_details": null
       },
       "usage": {
-        "input_tokens": 0,
-        "output_tokens": 0
+        "input_tokens": 25729,
+        "output_tokens": 55
       },
-      "latency_seconds": 3.661400079727173,
-      "raw_response": "",
-      "error": "Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{\\n  \"error\": {\\n    \"message\": \"You uploaded an unsupported image. Please make sure your image has of one the following formats: [\\'jpeg\\', \\'webp\\', \\'gif\\', \\'png\\'].\",\\n    \"type\": \"invalid_request_error\",\\n    \"param\": null,\\n    \"code\": \"invalid_image_format\"\\n  }\\n}', 'provider_name': 'Azure', 'is_byok': False, 'provider_error_code': 'invalid_image_format', 'previous_errors': [{'code': 400, 'message': 'Provider returned error', 'provider_name': 'OpenAI', 'raw': '{\\n  \"error\": {\\n    \"message\": \"You uploaded an unsupported image. Please make sure your image has of one the following formats: [\\'png\\', \\'jpeg\\', \\'gif\\', \\'webp\\'].\",\\n    \"type\": \"invalid_request_error\",\\n    \"param\": null,\\n    \"code\": \"invalid_image_format\"\\n  }\\n}'}]}}, 'user_id': 'user_3HM6bKn1GhPiBnFtklBsCArwhtC'}"
+      "latency_seconds": 6.49504017829895,
+      "raw_response": "{\n  \"vendor\": \"Manish Taxi Service\",\n  \"invoice_number\": \"147\",\n  \"date\": \"17-06-2025\",\n  \"amount\": 2520,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}",
+      "error": null
     },
     "claude": {
       "bill_filename": "Bill_11.jpg",
       "model": "claude",
       "fields": {
-        "vendor": null,
-        "invoice_number": null,
-        "date": null,
-        "amount": null,
-        "currency": null,
+        "vendor": "Manish Taxi Service",
+        "invoice_number": "147",
+        "date": "17-06-2025",
+        "amount": 2520,
+        "currency": "INR",
         "gst_details": null
       },
       "usage": {
-        "input_tokens": 0,
-        "output_tokens": 0
+        "input_tokens": 1807,
+        "output_tokens": 74
       },
-      "latency_seconds": 4.555546998977661,
-      "raw_response": "",
-      "error": "Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64.data: Image format image/jpeg not supported\"},\"request_id\":\"req_011CddmMS4si4dLNQ5HMKxwa\"}', 'provider_name': 'Azure', 'is_byok': False, 'previous_errors': [{'code': 400, 'message': 'Provider returned error', 'provider_name': 'Amazon Bedrock', 'raw': '{\"message\":\"messages.0.content.1.image.source.base64.data: Image format image/jpeg not supported\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Google', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64.data: Image format image/jpeg not supported\"},\"request_id\":\"req_vrtx_011CddmMLRJGeA4yk4bnrDh6\"}'}, {'code': 400, 'message': 'Provider returned error', 'provider_name': 'Anthropic', 'raw': '{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.0.content.1.image.source.base64.data: Image format image/jpeg not supported\"},\"request_id\":\"req_011CddmMPP9WoAE6LSgiFqLa\"}'}]}}, 'user_id': 'user_3HM6bKn1GhPiBnFtklBsCArwhtC'}"
+      "latency_seconds": 5.877986431121826,
+      "raw_response": "```json\n{\n  \"vendor\": \"Manish Taxi Service\",\n  \"invoice_number\": \"147\",\n  \"date\": \"17-06-2025\",\n  \"amount\": 2520,\n  \"currency\": \"INR\",\n  \"gst_details\": null\n}\n```",
+      "error": null
     }
   }
 }
